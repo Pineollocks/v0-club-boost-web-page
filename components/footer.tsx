@@ -19,6 +19,12 @@ export function Footer() {
             Mission
           </a>
           <a
+            href="#clubs"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Clubs
+          </a>
+          <a
             href="#partners"
             className="text-sm text-muted-foreground transition-colors hover:text-foreground"
           >
