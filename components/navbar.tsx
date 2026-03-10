@@ -19,7 +19,7 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="font-[var(--font-heading)] text-xl font-bold tracking-tight text-foreground">
-          ClubBoost
+          ClubLaunch
         </a>
 
         {/* Desktop nav */}

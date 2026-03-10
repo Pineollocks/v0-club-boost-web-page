@@ -6,10 +6,10 @@ export function Footer() {
           href="#"
           className="font-[var(--font-heading)] text-lg font-bold tracking-tight text-foreground"
         >
-          ClubBoost
+          ClubLaunch
         </a>
         <p className="text-sm text-muted-foreground">
-          {"ClubBoost"} &copy; {new Date().getFullYear()}. All rights reserved.
+          {"ClubLaunch"} &copy; {new Date().getFullYear()}. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
           <a

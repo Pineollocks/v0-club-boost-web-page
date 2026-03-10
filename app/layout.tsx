@@ -10,7 +10,7 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'ClubBoost - Free Marketing for School Clubs',
+  title: 'ClubLaunch - Free Marketing for School Clubs',
   description:
     'We connect school clubs with sponsors and funding so they can focus on what matters most.',
   icons: {
