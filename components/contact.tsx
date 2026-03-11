@@ -46,7 +46,7 @@ export function Contact() {
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="size-5 shrink-0" />
-                <span>hello@clubboost.org</span>
+                <span>hello@clublaunch.org</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="size-5 shrink-0" />

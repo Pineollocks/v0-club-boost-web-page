@@ -5,7 +5,7 @@ const founders = [
     name: "Alex Rivera",
     role: "Co-Founder & CEO",
     image: "/images/founder-1.jpg",
-    bio: "A former club president who experienced firsthand the challenge of securing sponsorships. Alex started ClubBoost to ensure no student club goes without the resources they need to succeed.",
+    bio: "A former club president who experienced firsthand the challenge of securing sponsorships. Alex started ClubLaunch to ensure no student club goes without the resources they need to succeed.",
   },
   {
     name: "Jordan Chen",
@@ -25,7 +25,7 @@ export function Founders() {
             Meet the Team
           </p>
           <h2 className="mt-3 font-[var(--font-heading)] text-3xl font-bold tracking-tight text-foreground md:text-5xl text-balance">
-            The People Behind ClubBoost
+            The People Behind ClubLaunch
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground text-pretty">
             Two friends united by a shared belief that every school club
