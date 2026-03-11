@@ -23,9 +23,9 @@ export function Navbar() {
           <Image
             src="/images/club-launch-logo.png"
             alt="ClubLaunch"
-            width={160}
-            height={36}
-            className="h-9 w-auto mix-blend-darken dark:brightness-0 dark:invert"
+            width={800}
+            height={180}
+            className="h-[180px] w-auto mix-blend-darken dark:brightness-0 dark:invert"
             priority
           />
         </a>
