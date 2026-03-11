@@ -1,15 +1,20 @@
+import Image from "next/image"
+
 export function Footer() {
   return (
     <footer className="border-t border-border px-6 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 md:flex-row">
-        <a
-          href="#"
-          className="font-[var(--font-heading)] text-lg font-bold tracking-tight text-foreground"
-        >
-          ClubBoost
+        <a href="#" className="flex items-center">
+          <Image
+            src="/images/club-launch-logo.png"
+            alt="ClubLaunch"
+            width={120}
+            height={28}
+            className="h-7 w-auto dark:invert"
+          />
         </a>
         <p className="text-sm text-muted-foreground">
-          {"ClubBoost"} &copy; {new Date().getFullYear()}. All rights reserved.
+          {"ClubLaunch"} &copy; {new Date().getFullYear()}. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
           <a

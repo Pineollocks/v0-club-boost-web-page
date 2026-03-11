@@ -9,7 +9,7 @@ const clubs = [
     icon: Trophy,
     tagline: "Regional Champions, 2024",
     description:
-      "From a 12-person after-school group to a nationally ranked robotics team. ClubBoost helped them secure $18,000 in sponsorships to attend the FIRST Robotics World Championship.",
+      "From a 12-person after-school group to a nationally ranked robotics team. ClubLaunch helped them secure $18,000 in sponsorships to attend the FIRST Robotics World Championship.",
     achievements: [
       "1st Place, Regional Robotics Championship",
       "Secured 3 corporate sponsors",
@@ -24,7 +24,7 @@ const clubs = [
     icon: TrendingUp,
     tagline: "State Finalists, 3 Years Running",
     description:
-      "Sponsorship funding allowed them to travel to 8 tournaments this year, including nationals. Their membership has tripled since partnering with ClubBoost.",
+      "Sponsorship funding allowed them to travel to 8 tournaments this year, including nationals. Their membership has tripled since partnering with ClubLaunch.",
     achievements: [
       "State finals 3 consecutive years",
       "8 tournaments attended this season",
@@ -39,7 +39,7 @@ const clubs = [
     icon: Leaf,
     tagline: "500+ Trees Planted This Year",
     description:
-      "What started as a small recycling club became a school-wide sustainability movement. ClubBoost connected them with eco-conscious brands for ongoing support.",
+      "What started as a small recycling club became a school-wide sustainability movement. ClubLaunch connected them with eco-conscious brands for ongoing support.",
     achievements: [
       "500+ trees planted campus-wide",
       "Partnered with 2 eco-brands",
