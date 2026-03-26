@@ -1,17 +1,48 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, MapPin } from "lucide-react"
+import { Mail, MapPin, Loader2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 
 export function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    setIsLoading(true)
+    setError(null)
+
+    const formData = new FormData(e.currentTarget)
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+    }
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
+      setSubmitted(true)
+    } catch {
+      setError('Failed to send message. Please try again or email us directly.')
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -46,7 +77,7 @@ export function Contact() {
             <div className="flex flex-col gap-4">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="size-5 shrink-0" />
-                <span>hello@clublaunch.org</span>
+                <span>clublaunchontario@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <MapPin className="size-5 shrink-0" />
